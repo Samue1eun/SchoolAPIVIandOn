@@ -6,9 +6,9 @@ from rest_framework.response import Response
 
 # Create your views here.
 
-class AllSubjects(APIView):
+class All_subjects(APIView):
 
     def get(self, request):
-        all_subjects = Subject.objects.all()
-        serialized_all_subjects = SubjectSerializer(all_subjects, many=True)
-        return Response(serialized_all_subjects.data)
+        subjects = Subject.objects.all()
+        serialized_subjects = SubjectSerializer(subjects, many=True)
+        return Response(serialized_subjects.data)

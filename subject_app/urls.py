@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import AllSubjects
+from .views import All_subjects
 
 urlpatterns = [
-    path('', AllSubjects.as_view(), name='all_subjects'),
+    path('', All_subjects.as_view(), name='all_subjects'),
 ]
